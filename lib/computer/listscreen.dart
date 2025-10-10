@@ -6,6 +6,7 @@ import 'package:mcq_electronics/math/surds.dart';
 import 'package:mcq_electronics/math/trignometricfunctions.dart';
 
 import 'introduction.dart';
+import 'mspower.dart';
 import 'msword.dart';
 
 
@@ -23,7 +24,7 @@ class CompChaptersPage extends StatelessWidget {
     final List<Map<String, dynamic>> chapters = [
       {'title': 'Introduction', 'page': const IntroComputerQuizScrollable()},
       {'title': 'MS Word', 'page': const MSWordPage()},
-      {'title': 'Introduction', 'page': const IntroComputerQuizScrollable()},
+      {'title': 'MS PowerPoint', 'page': const MSPowerPointQuizPage()},
 
     ];
 
