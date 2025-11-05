@@ -1,9 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:mcq_electronics/math/permutation.dart';
-import 'package:mcq_electronics/math/polynomial.dart';
-import 'package:mcq_electronics/math/sequencesseries.dart';
-import 'package:mcq_electronics/math/surds.dart';
-import 'package:mcq_electronics/math/trignometricfunctions.dart';
 
 import 'introduction.dart';
 import 'mspower.dart';

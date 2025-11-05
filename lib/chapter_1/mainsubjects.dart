@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import '../chemistry/chapterlist.dart';
 import '../computer/listscreen.dart';
+import '../game/alphabet.dart';
+import '../game/catchstar.dart';
 import '../math/chapterslist.dart';
 import '../math/indices.dart';
 import 'homescreen.dart';
@@ -50,13 +53,13 @@ class SubjectScreen extends StatelessWidget {
       {
         "name": "English",
         "icon": FontAwesomeIcons.bookOpen,
-        "screen": const EnglishScreen(),
+        "screen": const KidsLearningGame(),
         "colors": [Colors.amber.shade400, Colors.deepOrange.shade700],
       },
       {
         "name": "Chemistry",
         "icon": FontAwesomeIcons.flask,
-        "screen": const EnglishScreen(),
+        "screen": const ChemistryChaptersPage(),
         "colors": [Colors.teal.shade400, Colors.green.shade800],
       },
     ];
