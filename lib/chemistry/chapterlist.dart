@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'atomicstructure.dart';
 import 'chapter3.dart';
+import 'definations.dart';
 import 'introduction.dart';
 
 
@@ -14,7 +15,7 @@ class ChemistryChaptersPage extends StatelessWidget {
       {'title': 'Introduciton', 'page': const introduction()},
       {'title': 'Atomic Structure', 'page': const ChemistryChapter2Screen()},
       {'title': 'Elements and the periodic table', 'page': const ChemistryChapter3Screen()},
-
+      {'title': 'Definations', 'page': ChemistryDefinitionsScreen()},
     ];
 
     return Scaffold(
