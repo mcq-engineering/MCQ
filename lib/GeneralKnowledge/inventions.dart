@@ -11,6 +11,7 @@ class inventions extends StatefulWidget {
 class _inventionsState extends State<inventions> {
   final String jsonData = '''
 [
+
   {"question": "Who invented the motorcycle?", "answer": "Gottlieb Daimler and Wilhelm Maybach in 1885 (Daimler Reitwagen, Germany)."},
   {"question": "Who invented the cell phone?", "answer": "Martin Cooper in 1973 at Motorola, USA (first portable handheld mobile phone)."},
   {"question": "Who was J. Brandenberger?", "answer": "Jacques Edwin Brandenberger, Swiss chemist, invented cellophane in 1908."},
@@ -35,9 +36,16 @@ class _inventionsState extends State<inventions> {
   {"question": "Who deciphered the genetic code?", "answer": "Har Gobind Khorana (1960s–70s) – synthesized first artificial gene and decoded codons. Nobel Prize 1968."},
   {"question": "Who discovered insulin?", "answer": "Frederick Banting and Charles Best in 1921 (isolated insulin to treat diabetes)."},
   {"question": "Who invented the internal combustion engine?", "answer": "Nikolaus Otto in 1876 (four-stroke engine)."},
-  {"question": "Who invented the Diesel engine?", "answer": "Rudolf Diesel in 1897 (compression-ignition engine)."}
+  {"question": "Who invented the Diesel engine?", "answer": "Rudolf Diesel in 1897 (compression-ignition engine)."},
+  {"question": "Who invented the electric battery?", "answer": "Alessandro Volta in 1800 (Voltaic Pile)."},
+  {"question": "Who is the founder of antiseptic medicine?", "answer": "Joseph Lister in 1867 (used carbolic acid to sterilize surgical instruments and wounds)."},
+  {"question": "Who is known as the father of modern surgery?", "answer": "John Hunter (1728–1793), Scottish surgeon and anatomist."},
+  {"question": "Who proposed the Big Bang Theory?", "answer": "Georges Lemaître in 1927 (primeval atom theory)."},
+  {"question": "Who invented dynamite?", "answer": "Alfred Nobel in 1867 (nitroglycerin stabilized with absorbent material)."},
+  {"question": "Who first invented gunpowder?", "answer": "Chinese alchemists in 9th century (mixture of saltpeter, charcoal, and sulfur)."},
+  {"question": "Who built the first full-scale working steam locomotive?", "answer": "Richard Trevithick in 1804 (Penydarren locomotive, Wales)."},
+  {"question": "Who built the first practical airplane?", "answer": "Wright brothers, Orville and Wilbur Wright in 1903 (Wright Flyer)."}
 ]
-
   ''';
 
   late List<dynamic> quizItems;
@@ -56,15 +64,31 @@ class _inventionsState extends State<inventions> {
       appBar: AppBar(
         title: const Text('Inventions & Discoveries'),
         centerTitle: true,
-        backgroundColor: Colors.deepPurple,
+        backgroundColor: Colors.teal,
+        actions: [
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 16),
+            child: Center(
+              child: Text(
+                'Total: ${quizItems.length}',
+                style: const TextStyle(
+                  fontSize: 16,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.white,
+                ),
+              ),
+            ),
+          ),
+        ],
       ),
       body: Container(
         decoration: const BoxDecoration(
-          gradient: LinearGradient(
-            colors: [Colors.deepPurpleAccent, Colors.blueAccent],
-            begin: Alignment.topLeft,
-            end: Alignment.bottomRight,
-          ),
+          // gradient: LinearGradient(
+          //   colors: [Colors.deepPurpleAccent, Colors.blueAccent],
+          //   begin: Alignment.topLeft,
+          //   end: Alignment.bottomRight,
+          // ),
+          color: Colors.teal,
         ),
         child: ListView.builder(
           padding: const EdgeInsets.all(10),
