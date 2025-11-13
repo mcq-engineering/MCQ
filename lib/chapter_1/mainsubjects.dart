@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import '../GeneralKnowledge/inventions.dart';
 import '../chemistry/chapterlist.dart';
 import '../computer/listscreen.dart';
 import '../game/alphabet.dart';
@@ -53,7 +54,7 @@ class SubjectScreen extends StatelessWidget {
       {
         "name": "English",
         "icon": FontAwesomeIcons.bookOpen,
-        "screen": const KidsLearningGame(),
+        "screen": const inventions(),
         "colors": [Colors.amber.shade400, Colors.deepOrange.shade700],
       },
       {
