@@ -17,6 +17,8 @@ class SubjectScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // NOTE: Some screen imports are commented out or replaced with dummy screens
+    // to ensure this code block compiles independently.
     final subjects = [
       {
         "name": "Electronics - I",
@@ -88,11 +90,10 @@ class SubjectScreen extends StatelessWidget {
             begin: Alignment.topLeft,
             end: Alignment.bottomRight,
           ),
-
-
-
         ),
-        child: Center(
+        // **START OF CHANGE: Replaced Center with SingleChildScrollView**
+        child: SingleChildScrollView(
+          padding: const EdgeInsets.symmetric(vertical: 40.0, horizontal: 16.0), // Added generous padding
           child: Wrap(
             spacing: 16,
             runSpacing: 16,
@@ -149,6 +150,7 @@ class SubjectScreen extends StatelessWidget {
             }).toList(),
           ),
         ),
+        // **END OF CHANGE**
       ),
     );
   }
