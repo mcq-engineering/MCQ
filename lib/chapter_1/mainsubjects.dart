@@ -1,12 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import '../GeneralKnowledge/inventions.dart';
+import '../GeneralKnowledge/measureunits.dart';
 import '../chemistry/chapterlist.dart';
 import '../computer/listscreen.dart';
 import '../game/alphabet.dart';
 import '../game/catchstar.dart';
 import '../math/chapterslist.dart';
 import '../math/indices.dart';
+import '../taptoflip.dart';
+import '../tictactoe.dart';
 import 'homescreen.dart';
 
 class SubjectScreen extends StatelessWidget {
@@ -30,7 +33,7 @@ class SubjectScreen extends StatelessWidget {
       {
         "name": "Digital Logic Design",
         "icon": FontAwesomeIcons.projectDiagram,
-        "screen": const DigitalLogicScreen(),
+        "screen": const MemoryMatchScreen(),
         "colors": [Colors.green.shade400, Colors.teal.shade700],
       },
       {
@@ -48,7 +51,7 @@ class SubjectScreen extends StatelessWidget {
       {
         "name": "Physics",
         "icon": FontAwesomeIcons.atom,
-        "screen": const PhysicsScreen(),
+        "screen": const TicTacToeScreen(),
         "colors": [Colors.cyan.shade400, Colors.blueGrey.shade700],
       },
       {
@@ -61,6 +64,18 @@ class SubjectScreen extends StatelessWidget {
         "name": "Chemistry",
         "icon": FontAwesomeIcons.flask,
         "screen": const ChemistryChaptersPage(),
+        "colors": [Colors.teal.shade400, Colors.green.shade800],
+      },
+      {
+        "name": "English",
+        "icon": FontAwesomeIcons.bookOpen,
+        "screen": const inventions(),
+        "colors": [Colors.amber.shade400, Colors.deepOrange.shade700],
+      },
+      {
+        "name": "General knowledge",
+        "icon": FontAwesomeIcons.bookMedical,
+        "screen": const UnitConverterScreen(),
         "colors": [Colors.teal.shade400, Colors.green.shade800],
       },
     ];
